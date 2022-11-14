@@ -1,4 +1,12 @@
 
 .component-app {
-    color: #D75050;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.timer-controls {
+    display: flex;
 }
