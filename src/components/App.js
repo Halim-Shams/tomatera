@@ -1,5 +1,7 @@
 import './App.css'
 import Timer from './Timer.js'
+import Start from './Start.js'
+import Stop from './Stop.js'
 
 export default function App() {
   
@@ -11,6 +13,10 @@ export default function App() {
   return (
     <div className="component-app">
       <Timer time={time}/>
+      <div className='timer-controls'>
+        <Start />
+        <Stop />
+      </div>
     </div>
   )
 }

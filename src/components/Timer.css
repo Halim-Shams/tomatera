@@ -1,4 +1,8 @@
 
 .component-timer {
-    
+    color: #D75050;
+    font-size: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 450px;
 }
