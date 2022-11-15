@@ -1,8 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans&display=swap');
 
 .component-timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.text-timer {
     color: #D75050;
-    font-size: 200px;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 450px;
+    font-family: 'DM Mono', monospace;
+    font-size: 180px;
+    height: 30px;
+    margin-top: 45%;
+}
+
+.button-toggle, .button-reset {
+    background-color: #3E3E42;
+    border: none;
+    color: #D75050;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 36px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button-toggle:hover, .button-reset:hover {
+    background-color: #D75050;
+    color: #3E3E42;
+}
+
+.button-toggle:active, .button-reset:active {
+    background-color: #D75050;
+    color: #3E3E42;
+    transform: translateY(4px);
+}
+
+.button-toggle:disabled {
+    cursor: not-allowed;
+    opacity: 50%;
+    pointer-events: none;
 }
