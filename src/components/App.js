@@ -5,10 +5,10 @@ export default function App() {
 
   // Time values
   const time = {
-    work_minutes: 0,
-    work_seconds: 10,
-    break_minutes: 0,
-    break_seconds: 5
+    work_minutes: 25,
+    work_seconds: 0,
+    break_minutes: 5,
+    break_seconds: 0
   }
 
   return (
