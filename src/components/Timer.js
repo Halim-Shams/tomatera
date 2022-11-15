@@ -4,9 +4,13 @@ import './Timer.css'
 
 export default function Timer({time}) {
 
-    const [[mins, secs], setTime] = React.useState([time.work_minutes, time.work_seconds]);  // Displayed time state
+    // Displayed time state
+    const [[mins, secs], setTime] = React.useState([
+        time.work_minutes,
+        time.work_seconds
+    ]);
     const [paused, setPaused] = React.useState(true);  // Pause state
-    const [productive, setProductive] = React.useState(true);  // Work-break state
+    const [productive, setProductive] = React.useState(true);  // Work state
 
     // The button sound
     const [playPush] = useSound(
@@ -63,8 +67,11 @@ export default function Timer({time}) {
         }
     }
 
+    let timerText = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+
     // Allows the timer to run
     React.useEffect(function() {
+        document.title = `Tomatera :: ${timerText}`;
         if (!paused) {
             const timerId = setInterval(function() { tick(); }, 1000);
             return function() { clearInterval(timerId); }
@@ -78,13 +85,24 @@ export default function Timer({time}) {
 
             {/* Clock */}
 
-            <p className='text-timer'>{`${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`}</p>
+            <p className='text-timer'>{timerText}</p>
             
             {/* Controls */}
             
             <div>
-                <button className='button-toggle' id='button-toggle' onClick={onToggle} onMouseDown={playPush}>Start</button>
-                <button className='button-reset' onClick={onReset} onMouseDown={playPush}>Reset</button>
+                <button
+                    className='button-toggle'
+                    id='button-toggle'
+                    onClick={onToggle}
+                    onMouseDown={playPush}>
+                    Start
+                </button>
+                <button
+                    className='button-reset'
+                    onClick={onReset}
+                    onMouseDown={playPush}>
+                    Reset
+                </button>
             </div>
             
         </div>
