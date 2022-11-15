@@ -8,6 +8,18 @@ export default function Timer({time}) {
     const [paused, setPaused] = React.useState(true);  // Pause state
     const [productive, setProductive] = React.useState(true);  // Work-break state
 
+    // The button sound
+    const [playPush] = useSound(
+        'sounds/bop.mp3',
+        { volume: 0.25 }
+    );
+
+    // The alarm sound
+    const [playAlarm] = useSound(
+        'sounds/alarm.mp3',
+        { volume: 0.5 }
+    );
+
     /**
      * Toggles pause state of timer
      */
@@ -36,6 +48,7 @@ export default function Timer({time}) {
      */
      const tick = function() {
         if (mins === 0 && secs === 0) {
+            playAlarm();
             if (productive) {
                 setProductive(false);
                 setTime([time.break_minutes, time.break_seconds]);
@@ -70,8 +83,8 @@ export default function Timer({time}) {
             {/* Controls */}
             
             <div>
-                <button className='button-toggle' id='button-toggle' onClick={onToggle}>Start</button>
-                <button className='button-reset' onClick={onReset}>Reset</button>
+                <button className='button-toggle' id='button-toggle' onClick={onToggle} onMouseDown={playPush}>Start</button>
+                <button className='button-reset' onClick={onReset} onMouseDown={playPush}>Reset</button>
             </div>
             
         </div>
