@@ -14,13 +14,13 @@ export default function Timer({time}) {
 
     // The button sound
     const [playPush] = useSound(
-        'sounds/bop.mp3',
+        '/sounds/bop.mp3',
         { volume: 0.25 }
-    );
+      );
 
     // The alarm sound
     const [playAlarm] = useSound(
-        'sounds/alarm.mp3',
+        '/sounds/alarm.mp3',
         { volume: 0.5 }
     );
 
@@ -90,19 +90,8 @@ export default function Timer({time}) {
             {/* Controls */}
             
             <div>
-                <button
-                    className='button-toggle'
-                    id='button-toggle'
-                    onClick={onToggle}
-                    onMouseDown={playPush}>
-                    Start
-                </button>
-                <button
-                    className='button-reset'
-                    onClick={onReset}
-                    onMouseDown={playPush}>
-                    Reset
-                </button>
+                <button className='button-toggle' id='button-toggle' onClick={onToggle} onMouseDown={playPush}>Start</button>
+                <button className='button-reset' onClick={onReset} onMouseDown={playPush}>Reset</button>
             </div>
             
         </div>
