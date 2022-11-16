@@ -1,7 +1,7 @@
 {
   "name": "tomatera",
   "version": "0.1.0",
-  "homepage": "https://nicholasdly.github.io/tomatera",
+  "homepage": "https://tomatera.dev",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
