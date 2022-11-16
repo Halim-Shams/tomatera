@@ -13,7 +13,7 @@
     font-family: 'DM Mono', monospace;
     font-size: 180px;
     height: 30px;
-    margin-top: 45%;
+    margin-top: 225px;
 }
 
 .button-toggle, .button-reset {
@@ -45,4 +45,12 @@
     cursor: not-allowed;
     opacity: 50%;
     pointer-events: none;
+}
+
+.description {
+    color: #D75050;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    margin-top: 225px;
+    text-align: center;
 }
