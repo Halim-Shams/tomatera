@@ -1,5 +1,6 @@
-# An automatic Pomodoro timer.
+# Tomatera is a simple pomodoro timer.
 
-![Tomatera Display](public/screenshots/home.png)
+After the initial 25 minutes, the timer restarts at 5 minutes. </br>
+After the 5 minutes, the timer restarts at 25 minutes.
 
-**Tomatera** is a simplified and easy to use Pomodoro timer on the web, that can be used [here](https://nicholasdly.github.io/tomatera/).
+A gentle alert will play at the end of each timer.
