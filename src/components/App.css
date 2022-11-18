@@ -1,8 +1,7 @@
 
 .component-app {
+    background-color: #252526;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-content: center;
 }

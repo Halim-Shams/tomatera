@@ -43,7 +43,6 @@ export default function Timer({time}) {
     const onReset = function() {
         setPaused(true);
         document.getElementById("button-toggle").innerText = "Start";
-        document.getElementById("button-toggle").removeAttribute("disabled");
         setTime([time.work_minutes, time.work_seconds]);
     }
 
@@ -85,7 +84,7 @@ export default function Timer({time}) {
 
             {/* Clock */}
 
-            <p className='text-timer'>{timerText}</p>
+            <span className='text-timer'>{timerText}</span>
             
             {/* Controls */}
             
@@ -96,7 +95,7 @@ export default function Timer({time}) {
             
             {/* Description */}
 
-            <div>
+            {/* <div>
                 <p className='description'>
                     <b>Tomatera</b> is a simple <i>pomodoro</i> timer.
                     <br/><br/>
@@ -106,7 +105,7 @@ export default function Timer({time}) {
                     <br/><br/>
                     A gentle alert will play at the end of each timer.
                 </p>
-            </div>
+            </div> */}
 
         </div>
     )
