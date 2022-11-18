@@ -3,7 +3,7 @@
 The [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) is a method of time management through intervals. <br/>
 By taking routine breaks, you stay **motivated** and therefore more **productive**.
 
-**Tomatera** aims to help you keep track of your time by automatically switching between 25 and 5 minute intervals.
+**Tomatera** aims to help you apply the pomodoro technique and keep track of your time by automatically switching between 25 and 5 minute timers.
 
 Try it out @ [tomatera.dev](https://tomatera.dev)!
 
