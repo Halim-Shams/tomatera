@@ -5,15 +5,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    height: 80%;
 }
 
 .text-timer {
     color: #D75050;
     font-family: 'DM Mono', monospace;
     font-size: 180px;
-    height: 30px;
-    margin-top: 225px;
+    transition-duration: 0.2s;
 }
 
 .button-toggle, .button-reset {
@@ -41,16 +40,27 @@
     transform: translateY(4px);
 }
 
-.button-toggle:disabled {
-    cursor: not-allowed;
-    opacity: 50%;
-    pointer-events: none;
-}
-
-.description {
+/* .description {
     color: #D75050;
     font-family: 'DM Sans', sans-serif;
     font-size: 22px;
     margin-top: 225px;
     text-align: center;
+} */
+
+@media screen and (max-width: 600px) {
+
+    .text-timer {
+        font-size: 90px;
+    }
+
+    .button-toggle, .button-reset {
+        
+        font-size: 24px;
+        width: 120px;
+        height: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
 }
