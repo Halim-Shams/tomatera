@@ -5,7 +5,7 @@ By taking routine breaks, you stay **motivated** and therefore more **productive
 
 **Tomatera** aims to help you keep track of your time by automatically switching between 25 and 5 minute intervals.
 
-Try it out @ [tomatera.dev](tomatera.dev)!
+Try it out @ [tomatera.dev](https://tomatera.dev)!
 
 ## Features
 
