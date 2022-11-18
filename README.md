@@ -30,6 +30,6 @@ Try it out @ [tomatera.dev](https://tomatera.dev)!
 ## About Me
 
 I am a computer science undergraduate and an avid user of the pomodoro technique. <br/>
-I wanted to practice my web development skills on something I would actually use, so **Tomatera** was born. <br/>
+I wanted to practice my web development skills on something I would actually use, so **Tomatera** was born using React. <br/>
 
 Fun Fact: _Tomatera_ is Spanish for "tomato plant," which is inspired by _pomodoro_ being the Italian translation for "tomato."
