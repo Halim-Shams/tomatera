@@ -1,7 +1,18 @@
 
-.component-app {
+* {
+    margin:0;
+    padding:0;
+}
+
+section {
     background-color: #252526;
+}
+
+.section-timer {
     height: 100vh;
-    display: flex;
-    justify-content: center;
+    width: 100vw;
+}
+
+.section-footer {
+    width: 100vw;
 }

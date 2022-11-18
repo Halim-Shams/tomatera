@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans&display=swap');
+
+.component-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    color:#D75050;
+    padding: 0 25vw 25px 25vw;
+}
+
+i {
+    font-size: 50px;
+    color: #D75050;
+}

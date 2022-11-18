@@ -81,32 +81,12 @@ export default function Timer({time}) {
 
     return (
         <div className="component-timer">
-
-            {/* Clock */}
-
             <span className='text-timer'>{timerText}</span>
-            
-            {/* Controls */}
-            
             <div>
                 <button className='button-toggle' id='button-toggle' onClick={onToggle} onMouseDown={playPush}>Start</button>
                 <button className='button-reset' onClick={onReset} onMouseDown={playPush}>Reset</button>
             </div>
-            
-            {/* Description */}
-
-            {/* <div>
-                <p className='description'>
-                    <b>Tomatera</b> is a simple <i>pomodoro</i> timer.
-                    <br/><br/>
-                    After the initial 25 minutes, the timer restarts at 5 minutes.
-                    <br/>
-                    After the 5 minutes, the timer restarts at 25 minutes.
-                    <br/><br/>
-                    A gentle alert will play at the end of each timer.
-                </p>
-            </div> */}
-
+            <div className='arrow'></div>
         </div>
     )
 }

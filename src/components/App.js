@@ -1,5 +1,6 @@
 import './App.css'
 import Timer from './Timer.js'
+import Footer from './Footer.js'
 
 export default function App() {
 
@@ -12,8 +13,13 @@ export default function App() {
   }
 
   return (
-    <div className="component-app">
-      <Timer time={time}/>
+    <div>
+      <section className='section-timer'>
+        <Timer time={time}/>
+      </section>
+      <section className='section-footer'>
+        <Footer />
+      </section>
     </div>
   )
 }
